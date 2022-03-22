@@ -1,28 +1,21 @@
 #include "main.h"
-	
-	/**
-	 * puts2 - writes every other character
-	 * @str: input string to print
-	 * Description: prints every other character of string
-	 * Return: nothing
-	 **/
-	
-	void puts2(char *str)
+/**
+ * print_line - A function who print lines n times
+ *
+ * @n: number of times to print line
+ *
+ * Return: Does not return anything
+ */
+void print_line(int n)
+{
+	int i;
+
+	if (n > 0)
 	{
-		int i, j;
-	
-		i = 0;
-		j = 0;
-	
-		while (str[i] != '\0')
+		for (i = 0; i < n; i++)
 		{
-			i++;
+			_putchar('_');
 		}
-	
-		while (j < i)
-		{
-			_putchar(str[j]);
-			j += 2;
-		}
-		_putchar('\n');
 	}
+	_putchar('\n');
+}
