@@ -34,7 +34,7 @@ int strlen_no_wilds(char *str)
  * @wildstr: The string to be iterated through.
  */
 void iterate_wild(char **wildstr)
-{  
+{
 	if (**wildstr == '*')
 	{
 		(*wildstr)++;
