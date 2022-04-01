@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * _isdigit - checks if a character is digit
- * @c: carrier variable
- * Return: 1 if true, 0 if false
+ * _isdigit - Check if paramter c represents an digit.
+ * @c: Int representing an ascii character
+ * Return: Return 1 if it is a digit otherwise return 0.
  */
-
 int _isdigit(int c)
 {
-	return (c >= 48 && c <= 57);
+	if (c >= 48 && c <= 57)
+	{
+		return (1);
+	}
+	return (0);
 }

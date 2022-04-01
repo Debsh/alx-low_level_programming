@@ -1,24 +1,11 @@
 #include "main.h"
 
 /**
- * _abs - Entry point
- * @n: n is an integer
- * Description: prints the absolute value of an integer
- * Return: int
+ *_abs - givies absolute value
+ *@num : number tobe eval
+ *Return: + ve integer
  */
-
-int _abs(int n)
+int _abs(int num)
 {
-	if (n > 0)
-	{
-		return (n);
-	}
-	else if (n < 0)
-	{
-		return (-n);
-	}
-	else
-	{
-		return (n);
-	}
+return ((num >= 0) ? num : num * -1);
 }
